@@ -20,7 +20,7 @@ export default class ClassesController {
 
     if ( !subject || !week_day || !time ) {
       res.status(400).json({
-        message: "Missing filters"
+        message: "Missing one of the following filters: subject/week_day/time"
       });
     }
 
